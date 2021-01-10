@@ -25,7 +25,7 @@
 
 =>cd bot
 
-=>pkg install wget
+=>pkg install wget -y
 
 =>pkg install ffmpeg -y
 
