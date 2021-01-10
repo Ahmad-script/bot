@@ -16,17 +16,30 @@
 # cara install bot:
 
 =>buka apk termux terus tulis code code seperti dibawah :
+
 =>apt update && apt upgrade -y
+
 =>pkg install git -y
+
 =>git clone https://github.com/Ahmad-script/bot
+
 =>cd bot
+
 =>pkg install wget
+
 =>pkg install ffmpeg -y
+
 =>pkg install nodejs -y
+
 =>npm i -g cwebp
+
 =>npm i -g ytdl
+
 =>npm i
+
 =>npm i got
+
 =>node index.js
 
 Done tinggal scan qr code:)
+
