@@ -119,16 +119,16 @@ var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
 conn.sendMessage(id, menu.menu(id, BotName, corohelp, tampilTanggal, tampilWaktu, instagramlu, whatsapplu, kapanbotaktif, grupch1, grupch2) ,MessageType.text);
 }
 else if (text == 'assalamualaikum'){
-conn.sendMessage(id, 'Waalaikumsalam, _mau top up ya?_ langsung aja liat listnya tinggal Ketik *list*' ,MessageType.text);
+conn.sendMessage(id, 'Waalaikumsalam, _MAU TOP UP YA?_ langsung aja liat listnya tinggal Ketik *list*' ,MessageType.text);
 }
 else if (text == 'Assalamualaikum'){
-conn.sendMessage(id, 'Waalaikumsalam, _mau top up ya?_ langsung aja liat listnya tinggal Ketik *list*' ,MessageType.text);
+conn.sendMessage(id, 'Waalaikumsalam, _MAU TOP UP YA?_ langsung aja liat listnya tinggal Ketik *list*' ,MessageType.text);
 }
 else if (text == 'p'){
-conn.sendMessage(id, 'Ya?, mau _top up ya?_ langsung aja liat listnya tinggal Ketik *list*' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, _MAU TOP UP YA?_ langsung aja liat listnya tinggal Ketik *list*' ,MessageType.text);
 }
 else if (text == 'P'){
-conn.sendMessage(id, 'Ya?, mau_top up ya?_ langsung aja liat listnya tinggal Ketik *list*' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, _MAU TOP UP YA?_ langsung aja liat listnya tinggal Ketik *list*' ,MessageType.text);
 }
 else if (text == 'top up'){
 const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
