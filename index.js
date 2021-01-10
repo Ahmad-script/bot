@@ -12,7 +12,7 @@ const menu = require("./lib/menu.js");
 //
 const BotName = 'BOT'; // Nama Bot Whatsapp
 const instagramlu = 'gk ada'; // Nama Instagramlu cok
-const whatsapplu = '+62 821-5250-5264'; // Nomor whatsapplu cok
+const whatsapplu = '6282152505264'; // Nomor whatsapplu cok
 const kapanbotaktif = '24 Jam'; // Kapan bot lu aktif
 const grupch1 = 'gk ada'; // OFFICIAL GRUP LU 1
 const grupch2 = 'gk ada'; // OFFICIAL GRUP LU 2
