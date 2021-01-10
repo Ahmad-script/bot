@@ -3,10 +3,15 @@
 # bahan:
 
 =>apk termux
+
 =>2 hp satu untuk jalanin script dan satunya lagi untuk scan qr code
+
 =>kopi biar gak ngantuk
+
 =>udud biar gak bosen
+
 =>niat
+
 
 # cara install bot:
 
