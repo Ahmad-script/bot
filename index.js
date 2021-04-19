@@ -9,7 +9,6 @@ const urlencode = require("urlencode");
 const axios = require("axios");
 const imageToBase64 = require('image-to-base64');
 const menu = require("./lib/menu.js");
-const payment = require("./lib/payment.js");
 //
 const BotName = 'BOT'; // Nama Bot Whatsapp
 const instagramlu = 'gk ada'; // Nama Instagramlu cok
@@ -81,7 +80,7 @@ conn.on('message-new', async(m) =>
 
 // Groups
 
-if (text == 'list'){
+if (text == 'rank'){
 const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
 var date = new Date();
 var tahun = date.getFullYear();
@@ -118,19 +117,7 @@ var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + ta
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
 conn.sendMessage(id, menu.menu(id, BotName, corohelp, tampilTanggal, tampilWaktu, instagramlu, whatsapplu, kapanbotaktif, grupch1, grupch2) ,MessageType.text);
 }
-else if (text == 'assalamualaikum'){
-conn.sendMessage(id, 'Waalaikumsalam, _MAU TOP UP YA?_ langsung aja liat listnya tinggal Ketik *list*' ,MessageType.text);
-}
-else if (text == 'Assalamualaikum'){
-conn.sendMessage(id, 'Waalaikumsalam, _MAU TOP UP YA?_ langsung aja liat listnya tinggal Ketik *list*' ,MessageType.text);
-}
-else if (text == 'p'){
-conn.sendMessage(id, 'Ya?, _MAU TOP UP YA?_ langsung aja liat listnya tinggal Ketik *list*' ,MessageType.text);
-}
-else if (text == 'P'){
-conn.sendMessage(id, 'Ya?, _MAU TOP UP YA?_ langsung aja liat listnya tinggal Ketik *list*' ,MessageType.text);
-}
-else if (text == 'top up'){
+else if (text == 'Rank'){
 const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
 var date = new Date();
 var tahun = date.getFullYear();
@@ -167,7 +154,7 @@ var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + ta
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
 conn.sendMessage(id, menu.menu(id, BotName, corohelp, tampilTanggal, tampilWaktu, instagramlu, whatsapplu, kapanbotaktif, grupch1, grupch2) ,MessageType.text);
 }
-else if (text == 'List'){
+else if (text == 'RANK'){
 const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
 var date = new Date();
 var tahun = date.getFullYear();
@@ -204,117 +191,7 @@ var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + ta
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
 conn.sendMessage(id, menu.menu(id, BotName, corohelp, tampilTanggal, tampilWaktu, instagramlu, whatsapplu, kapanbotaktif, grupch1, grupch2) ,MessageType.text);
 }
-if (text == 'Top up'){
-const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
-var date = new Date();
-var tahun = date.getFullYear();
-var bulan = date.getMonth();
-var tanggal = date.getDate();
-var hari = date.getDay();
-var jam = date.getHours();
-var menit = date.getMinutes();
-var detik = date.getSeconds();
-switch(hari) {
- case 0: hari = "Minggu"; break;
- case 1: hari = "Senin"; break;
- case 2: hari = "Selasa"; break;
- case 3: hari = "Rabu"; break;
- case 4: hari = "Kamis"; break;
- case 5: hari = "Jum'at"; break;
- case 6: hari = "Sabtu"; break;
-}
-switch(bulan) {
- case 0: bulan = "Januari"; break;
- case 1: bulan = "Februari"; break;
- case 2: bulan = "Maret"; break;
- case 3: bulan = "April"; break;
- case 4: bulan = "Mei"; break;
- case 5: bulan = "Juni"; break;
- case 6: bulan = "Juli"; break;
- case 7: bulan = "Agustus"; break;
- case 8: bulan = "September"; break;
- case 9: bulan = "Oktober"; break;
- case 10: bulan = "November"; break;
- case 11: bulan = "Desember"; break;
-}
-var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
-var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
-conn.sendMessage(id, menu.menu(id, BotName, corohelp, tampilTanggal, tampilWaktu, instagramlu, whatsapplu, kapanbotaktif, grupch1, grupch2) ,MessageType.text);
-}
-else if (text == 'payment'){
-const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
-var date = new Date();
-var tahun = date.getFullYear();
-var bulan = date.getMonth();
-var tanggal = date.getDate();
-var hari = date.getDay();
-var jam = date.getHours();
-var menit = date.getMinutes();
-var detik = date.getSeconds();
-switch(hari) {
- case 0: hari = "Minggu"; break;
- case 1: hari = "Senin"; break;
- case 2: hari = "Selasa"; break;
- case 3: hari = "Rabu"; break;
- case 4: hari = "Kamis"; break;
- case 5: hari = "Jum'at"; break;
- case 6: hari = "Sabtu"; break;
-}
-switch(bulan) {
- case 0: bulan = "Januari"; break;
- case 1: bulan = "Februari"; break;
- case 2: bulan = "Maret"; break;
- case 3: bulan = "April"; break;
- case 4: bulan = "Mei"; break;
- case 5: bulan = "Juni"; break;
- case 6: bulan = "Juli"; break;
- case 7: bulan = "Agustus"; break;
- case 8: bulan = "September"; break;
- case 9: bulan = "Oktober"; break;
- case 10: bulan = "November"; break;
- case 11: bulan = "Desember"; break;
-}
-var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
-var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
-conn.sendMessage(id, payment.payment(id, BotName, corohelp, tampilTanggal, tampilWaktu, instagramlu, whatsapplu, kapanbotaktif, grupch1, grupch2) ,MessageType.text);
-}
-else if (text == 'Payment'){
-const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
-var date = new Date();
-var tahun = date.getFullYear();
-var bulan = date.getMonth();
-var tanggal = date.getDate();
-var hari = date.getDay();
-var jam = date.getHours();
-var menit = date.getMinutes();
-var detik = date.getSeconds();
-switch(hari) {
- case 0: hari = "Minggu"; break;
- case 1: hari = "Senin"; break;
- case 2: hari = "Selasa"; break;
- case 3: hari = "Rabu"; break;
- case 4: hari = "Kamis"; break;
- case 5: hari = "Jum'at"; break;
- case 6: hari = "Sabtu"; break;
-}
-switch(bulan) {
- case 0: bulan = "Januari"; break;
- case 1: bulan = "Februari"; break;
- case 2: bulan = "Maret"; break;
- case 3: bulan = "April"; break;
- case 4: bulan = "Mei"; break;
- case 5: bulan = "Juni"; break;
- case 6: bulan = "Juli"; break;
- case 7: bulan = "Agustus"; break;
- case 8: bulan = "September"; break;
- case 9: bulan = "Oktober"; break;
- case 10: bulan = "November"; break;
- case 11: bulan = "Desember"; break;
-}
-var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
-var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
-conn.sendMessage(id, payment.payment(id, BotName, corohelp, tampilTanggal, tampilWaktu, instagramlu, whatsapplu, kapanbotaktif, grupch1, grupch2) ,MessageType.text);
-}
+
 
 
 
