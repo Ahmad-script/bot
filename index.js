@@ -8,8 +8,8 @@ const fetch = require('node-fetch');
 const urlencode = require("urlencode");
 const axios = require("axios");
 const imageToBase64 = require('image-to-base64');
-const menuhypx = require("./lib/menuhypx.js");
 const infohypx = require("./lib/infohypx.js");
+const menuhypx = require("./lib/menuhypx.js");
 //
 const BotName = 'BOT'; // Nama Bot Whatsapp
 const instagramlu = 'gk ada'; // Nama Instagramlu cok
