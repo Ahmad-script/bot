@@ -10,7 +10,7 @@ const axios = require("axios");
 const imageToBase64 = require('image-to-base64');
 const menu = require("./lib/menu.js");
 //
-const BotName = 'BOT'; // Nama Bot Whatsapp
+const BotName = 'bot'; // Nama Bot Whatsapp
 const instagramlu = 'gk ada'; // Nama Instagramlu cok
 const whatsapplu = '6282152505264'; // Nomor whatsapplu cok
 const kapanbotaktif = '24 Jam'; // Kapan bot lu aktif
