@@ -46,7 +46,7 @@ conn.on('qr', qr =>
    {
       small: true
    });
-   console.log(`[ ${moment().format("HH:mm:ss")} ] Scan kode qr mu lewat Apk wa Terus Buka whatsapp web!`);
+   console.log(`[ ${moment().format("HH:mm:ss")} ] Scan kode qr mu lewat wa web`);
 });
 
 conn.on('credentials-updated', () =>
